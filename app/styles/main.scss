@@ -1,0 +1,92 @@
+@import "base";
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media (min-width: $screen-sm-min) {
+    .navbar > .container .navbar-brand {
+        margin-left: 0;
+    }
+}
+@media (max-width: $screen-md-min) {
+    aside, footer{
+        margin-top: 25px;
+    }
+}
+body{
+    padding-top: 70px;
+    color: rgba(85, 85, 85, 1.0);
+}
+.navbar{
+    border-radius: 0;
+    background-color: rgba(236, 48, 2, 1.0);
+    border: none;
+    min-height: 68px;
+}
+.navbar-brand{
+    background: transparent url(../images/sapient-logo.png) no-repeat left top;
+    text-indent: -9999px;
+    min-width: 68px;
+    margin: 0
+}
+.navbar-inverse{
+    @include box-shadow(0 5px 5px rgba(0,0,0,.40));
+    .navbar-brand, .navbar-nav > li {
+        line-height: 40px;
+        a{
+            line-height: 40px;
+            color: rgba(255, 255, 255, 1.0);
+            &:hover{
+                color: rgba(9, 9, 9, 1.0);
+            }
+        }
+        &.active a, &.active a:hover{
+            background: transparent;
+            color: rgba(9, 9, 9, 1.0);
+        }
+    }
+}
+.child-nodes{
+    margin-left: 20px;
+    margin-bottom: 15px
+}
+.owl-carousel{
+    background-color: rgba(194, 211, 55, 1.0);
+    .owl-item {
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .caption{
+            background-color: rgba(194, 211, 55, 0.75);
+            margin-top: -20px;
+            padding: 50px 20px 20px;
+            width: 100%;
+            color: rgba(255, 255, 255, 1.0);
+        }
+    }
+}
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 2px 3px;
+    filter: Alpha(Opacity=100);
+    opacity: 100;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 1.0);
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: rgba(0, 0, 0, 1.0);
+}
+.owl-pagination{
+    text-align: right;
+}

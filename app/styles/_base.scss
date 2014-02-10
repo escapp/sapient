@@ -1,0 +1,24 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+// Custom fonts
+@font-face {
+  font-family: 'Armata-Regular';
+  src: url('fonts/Armata-Regular-webfont.eot');
+  src: url('fonts/Armata-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Armata-Regular-webfont.woff') format('woff'),
+       url('fonts/Armata-Regular-webfont.ttf') format('truetype'),
+       url('fonts/Armata-Regular-webfont.svg#armata_regular') format('svg');
+}
+$font-family-base:  "Armata-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-size-base:          14px !default;
+$font-size-h1:            floor($font-size-base * 4.6) !default; // ~36px
+//$font-size-h2:            floor($font-size-base * 3.15) !default; // ~30px
+//$font-size-h3:            ceil($font-size-base * 3.7) !default; // ~24px
+//$font-size-h4:            ceil($font-size-base * 3.25) !default; // ~18px
+//$font-size-h5:            $font-size-base !default;
+//$font-size-h6:            ceil($font-size-base * 0.85) !default; // ~12px
+// ---------------------------------------------------------------------------
+// Imports
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+// ---------------------------------------------------------------------------
