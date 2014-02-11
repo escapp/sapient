@@ -88,12 +88,14 @@
                     <p>Fusce nibh nibh, vulputate sed vehicula sed, varius commodo lectus. Nulla euismod ligula eget diam convallis, id molestie quam ornare. In tristique, turpis et vulputate tempor, nunc diam congue dolor, ac lacinia leo mi sit amet tortor. Donec et sapien nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus at purus et erat ornare gravida. Donec non mollis libero, vel accumsan metus. Nunc pretium nec augue eu consequat. Vestibulum et dui odio. Maecenas ut venenatis nisl. Vestibulum tristique tincidunt purus, consectetur tempus diam iaculis eget.</p>
                 </article>
 
-                <form role="form" data-toggle="validator">
+                <form role="form" data-toggle="validator" id="contact-form">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label class="sr-only" for="name">Name</label>
                                 <input type="text" class="form-control" id="name" placeholder="Firstname Lastname" data-error="Name is required" required>
+                                <input type="hidden" name="firstname" id="firstname" value="">
+                                <input type="hidden" name="lastname" id="lastname" value="">
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">

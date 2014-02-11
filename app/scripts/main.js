@@ -1,5 +1,14 @@
 'use strict';
 $(document).ready(function() {
+    $('#contact-form').submit(function(event) {
+        var name = $('#name').val();
+        var nameArr = name.split(' ');
+        console.log("name", name, "first name", nameArr[0], "last name", nameArr[1]);
+        $('#firstname').val(nameArr[0]);
+        $('#lastname').val(nameArr[1]);
+        console.log("name", name, "$('#firstname').val(nameArr[0]);", $('#firstname').val(), "$('#lastname').val(nameArr[1]);", $('#lastname').val());
+        return false;
+    });
 
     var source = $('#ajax-carousel').html();
     //var Handlebars = Handlebars;
